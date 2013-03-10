@@ -55,19 +55,21 @@ body{
 }
 .icon{
 	background-image:url('/img/like_img.png');
+	background-position: 0 32px;
 	height:32px;
 	width:32px;
 	display:inline-block;
 }
 .icon:hover{
 	background-image:url('/img/like_img.png');
+	background-position: 0 -32px !important;
 	height:32px;
 	width:32px;
 	display:inline-block;
 }
-.like_button:hover, .fav_button:hover{
+/*.like_button:hover, .fav_button:hover{
 	color:#0B6121;
-}
+}*/
 .limit{
 	width:96%;
 }
