@@ -1,0 +1,13 @@
+Options +Indexes
+Options +FollowSymlinks
+RewriteEngine on
+RewriteRule ^n/(.*)/?$ index.php?n=$1
+RewriteRule ^registro$ index.php?mod=resgiter
+RewriteRule ^post/([0-9]*)$ index.php?mod=post&pid=$1
+RewriteRule ^post/(.*)$ index.php?mod=post&title=$1
+RewriteRule ^view/(.*)/([0-9]*)$ index.php?mod=view&anime=$1&cap=$2
+RewriteRule ^view/(.*)/$ index.php?mod=view&anime=$1
+RewriteRule ^search/(.*)/?$ index.php?mod=search&param=$1
+RewriteRule ^genero/(.*)/?$ index.php?mod=search&param=$1
+RewriteRule ^admin/(.*)/?$ index.php?mod=admin&param=$1
+

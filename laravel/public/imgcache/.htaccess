@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule ^(.*)-([0-9]*)x([0-9]*)\.(png|jpeg|jpg)$ index.php?file=$1&w=$2&h=$3&ext=$4
